@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+ 
+ 
+    <title>Exemplos JavaScript</title>
+</head>
+<body>
+    <br><br><br><br><br>
+ 
+    <h1 id="titulo">Olá!</h1>
+    <br><br><br>
+   
+ 
+ <!-- Incluindo o arquivo JavaScript -->
+    <script src="script.js"></script>
+ 
+    
+
+    <fieldset>
+    <legend>2- Caixa de alerta</legend>
+    <br>
+    <button id="meu Botao">Clique Aqui</button>
+    <br><br>
+    </fieldset>
+    <br><br><br><b><br><br><br>
+
+
+
+
+    <fieldset>
+    <legend>Onfocus</legend>
+    <br>
+    <button id="my bottom" onfocus="mudarCor()">Clique ou use a tecla Tab</button>
+    <br><br>
+    </fieldset>
+    <br><br><br><br><br><br><br>
+ 
+
+
+
+
+
+
+    <fieldset>
+    <legend>Onchange</legend>
+    <br>
+    <button id="seubotao" onclick="contarClique()">Clique Aqui</button>
+    <h2>Quantidade de cliques: <span id="contador">0</span></p> 
+    </fieldset>
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+    <input type="text" id="meuInput" onchange="atualizarValor()">
+    <h2>O valor atual é: <span id="valorAtual"></span></h2>
+    <br><br><br><br><br><br><br>
+           
+
+
+
+
+
+
+
+    <fieldset>
+    <legend>Exemplo 7</legend>
+    <br>
+    <label for="texto" id="digite">Digite um texto:</label>
+    <input type="text" id="texto">
+    <button onclick="converter()" id="Maiúsculas" >Converter para Maiúsculas</button>
+    <h2>Texto convertido: <span id="textoConvertido"></span></p>
+    </fieldset>
+    <br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+   <!-- Elementos HTML com a tag "p" -->
+    <p>Esse é um exemplo do código</p>
+    <p>document.getElementsByTagName();</p>
+
+
+
+
+
+
+
+    <!-- Botão para acionar a função JavaScript -->
+    <button onclick="realcarParagrafos()" id="white">Realçar Parágrafos</button>
+    <br><br><br><br>
+   
+   
+   
+   
+
+
+
+
+
+
+
+
+
+    <!-- Botão para acionar a função JavaScript -->
+    <button onclick="realcarParagrafos()">Realçar Parágrafos com a classe "realcar"</button>
+    <script>
+    function realcarParagrafoPorID() { 
+
+    // Obtém o primeiro parágrafo pelo ID
+    var paragrafo = document.querySelector("#paragrafo1");
+    
+    // Aplica um estilo de realce
+    paragrafo.style.backgroundColor = "yellow";
+    }
+    
+    function realcarPrimeiroParagrafoComClasse() {
+    // Obtém o primeiro parágrafo com a classe "realcar"
+    var paragrafo = document.querySelector(".realcar");
+    
+    // Aplica um estilo de realce
+    paragrafo.style.backgroundColor = "yellow";
+    }
+    </script>
+    <br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+    <fieldset>
+    <legend></legend>
+    <!-- Campo de entrada de texto e botão -->
+    <input type="text" id="meuCampo" placeholder="Digite algo...">
+    <button id="meuBotao">Exibir Valor</button>
+    <script>
+    // Espera até que o documento esteja completamente carregado
+    document.addEventListener("DOMContentLoaded", function() {
+
+    // Adiciona um evento de clique ao botão
+    document.querySelector("#meuBotao").addEventListener("click", function() {
+
+    // Seleciona o campo de entrada de texto e obtém seu valor
+    var valorCampo = document.querySelector("#meuCampo").value;
+            
+    // Exibe o valor do campo em um alerta
+    alert("O valor do campo é: " + valorCampo);
+    });
+    });
+    </script>
+    </fieldset>
+    <b><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+    <fieldset>
+    <legend>Realçar parágrafos</legend>
+    <!-- Parágrafos com diferentes classes -->
+    <p class="paragrafo">Parágrafo 1</p>
+    <p class="paragrafo">Parágrafo 2</p>
+    <p class="paragrafo">Parágrafo 3</p>
+
+    <!-- Botão para acionar a função JavaScript -->
+    <button onclick="realcarParagrafos()">Realçar Parágrafos</button>
+    </fieldset>
+    <br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+    <!-- Exemplo 8 -->
+    <fieldset>
+    <legend>Cálculo de Soma</legend>
+    <label>Valor 1: </label>
+    <input id="txt1" type="text"/><br><br>
+    <label>Valor 2: </label>
+    <input id="txt2" type="text"/><br><br>
+    <button id="somar" onclick="somarValores()">Somar</button>
+    </fieldset>
+    <br><br><br><br><br>
+
+
+
+
+
+    <h2>Exemplo de document.getElementsByTagName()</h2>
+    <form id="meuFormulario">
+    <input type="text" name="nome" placeholder="Nome">
+    <input type="email" name="email" placeholder="Email">
+    <input type="password" name="senha" placeholder="Senha">
+    <input type="submit" value="Enviar">
+    </form>
+    <br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+     <!-- Elemento HTML com um ID -->
+     <h1 id="meuParagrafo">Este é um parágrafo.</p>
+        <!-- Botão para acionar a função JavaScript -->
+        <button onclick="mudarTexto()" id="mudar">Clique para mudar o texto do parágrafo</button>
+        <br><br><br><br>
+        <script>
+        const paragrafos = document.getElementsByTagName("p");
+        for (let i = 0; i < paragrafos.length; i++) {
+        console.log(paragrafos[i].innerText);
+        }
+        </script>
+    
+
+
+
+</body>
+</html>

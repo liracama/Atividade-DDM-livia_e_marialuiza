@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(203, 212, 241);
+    text-align: center;
+    font: small-caption;
+}
+#clickButton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(123, 159, 226);
+    border-radius: 10px;
+    height: 60px;
+    border-color: rgb(123, 159, 226);;
+}
+#clickCount {
+    color: #9c93ee;
+    height: 50px;
+}
+
+#meubotao{
+    color: blueviolet;
+    border-radius: 15px;
+}
+
+
+#seubotao{
+    background-color: rgb(194, 129, 255);
+    height: 40px;
+    border-radius: 20px;
+    border-color: rgb(194, 129, 255);
+}
+
+#meuInput{
+    background-color: rgb(154, 167, 248);
+    height: 30px;
+    border-radius: 10px;
+    border-color: #9c93ee;
+}
+
+#meubotao{
+    height: 50px;
+}
+
+#mybottom{
+    height: 30px;
+}
+
+#Maiúsculas{
+    background-color: rgb(170, 145, 218);
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgb(170, 145, 218);
+}
+
+#digite{
+    height: 50px;
+}
+
+#mudar{
+    background-color: rgb(218, 168, 240);
+    height: 60px;
+    border-radius: 30px;
+}
+
+#white{
+    height: 60px;
+    background-color: rgb(129, 114, 231);
+    border-radius: 30px;
+}
+
